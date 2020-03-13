@@ -1,0 +1,1173 @@
+﻿\document
+[
+  Info
+  {
+    Title = "A sample invoice"
+    Subject = "Demonstrates how to create an invoice."
+    Author = "Stefan Lange"
+  }
+  UseCmykColor = true
+]
+{
+  \styles
+  {
+    Normal
+    {
+      Font
+      {
+        Name = "Segoe UI"
+      }
+    }
+
+    Heading1
+    {
+      ParagraphFormat
+      {
+        OutlineLevel = Level1
+      }
+    }
+
+    Heading2
+    {
+      ParagraphFormat
+      {
+        OutlineLevel = Level2
+      }
+    }
+
+    Heading3
+    {
+      ParagraphFormat
+      {
+        OutlineLevel = Level3
+      }
+    }
+
+    Heading4
+    {
+      ParagraphFormat
+      {
+        OutlineLevel = Level4
+      }
+    }
+
+    Heading5
+    {
+      ParagraphFormat
+      {
+        OutlineLevel = Level5
+      }
+    }
+
+    Heading6
+    {
+      ParagraphFormat
+      {
+        OutlineLevel = Level6
+      }
+    }
+
+    Heading7
+    {
+      ParagraphFormat
+      {
+        OutlineLevel = Level7
+      }
+    }
+
+    Heading8
+    {
+      ParagraphFormat
+      {
+        OutlineLevel = Level8
+      }
+    }
+
+    Heading9
+    {
+      ParagraphFormat
+      {
+        OutlineLevel = Level9
+      }
+    }
+
+    Header
+    {
+      ParagraphFormat
+      {
+        TabStops +=
+        {
+          Position = "16cm"
+          Alignment = Right
+        }
+      }
+    }
+
+    Footer
+    {
+      ParagraphFormat
+      {
+        TabStops +=
+        {
+          Position = "8cm"
+          Alignment = Center
+        }
+      }
+    }
+
+    InvalidStyleName
+    {
+      Font
+      {
+        Bold = true
+        Underline = Dash
+        Color = Lime
+      }
+    }
+
+    Table : Normal
+    {
+      Font
+      {
+        Name = "Segoe UI Semilight"
+        Size = 9
+      }
+    }
+
+    Title : Normal
+    {
+      Font
+      {
+        Name = "Segoe UI Semibold"
+        Size = 9
+      }
+    }
+
+    Reference : Normal
+    {
+      ParagraphFormat
+      {
+        SpaceBefore = "5mm"
+        SpaceAfter = "5mm"
+        TabStops +=
+        {
+          Position = "16cm"
+          Alignment = Right
+        }
+      }
+    }
+  }
+  \section
+  [
+    PageSetup
+    {
+      PageHeight = "29.7cm"
+      PageWidth = "21cm"
+      Orientation = Portrait
+      LeftMargin = "2.5cm"
+      RightMargin = "2.5cm"
+      TopMargin = "5.25cm"
+      BottomMargin = "2cm"
+      FooterDistance = "1.25cm"
+      HeaderDistance = "1.25cm"
+      OddAndEvenPagesHeaderFooter = false
+      DifferentFirstPageHeaderFooter = false
+      SectionStart = BreakNextPage
+      PageFormat = A4
+      MirrorMargins = false
+      HorizontalPageBreak = false
+    }
+  ]
+  {
+    \primaryfooter
+    {
+      \paragraph
+      [
+        Format
+        {
+          Font
+          {
+            Size = 9
+          }
+          Alignment = Center
+        }
+      ]
+      {
+        Yawer and Shazad Awesome Pty Ltd :-)
+      }
+    }
+    \textframe
+    [
+      Height = "3cm"
+      Width = "16cm"
+      RelativeHorizontal = Margin
+      RelativeVertical = Page
+      Left = Left
+      Top = "2cm"
+    ]
+    {
+      \paragraph
+      [
+        Format
+        {
+          Font
+          {
+            Size = 13
+            Bold = true
+            Italic = true
+          }
+          Alignment = Center
+          SpaceAfter = 3
+        }
+      ]
+      {
+        Seriel Number Search Certificate
+      }
+      \paragraph
+      [
+        Format
+        {
+          Alignment = Right
+        }
+      ]
+      {
+        Issued to: Shazad Saleemi\linebreak
+        Email: shazad.saleemi@outlook.com\linebreak
+        Issued Date: 03 March, 2020
+      }
+    }
+    \table
+    [
+      Style = "Table"
+      Borders
+      {
+        Width = 0.25
+        Color = Transparent
+        Left
+        {
+          Width = 0.5
+        }
+        Right
+        {
+          Width = 0.5
+        }
+      }
+    ]
+    {
+      \columns
+      {
+        \column
+        [
+          Format
+          {
+            Alignment = Center
+          }
+          Width = "8cm"
+        ]
+        \column
+        [
+          Format
+          {
+            Alignment = Right
+          }
+          Width = "8cm"
+        ]
+      }
+      \rows
+      [
+        LeftIndent = 0
+      ]
+      {
+        \row
+        [
+          Format
+          {
+            Font
+            {
+              Size = 13
+              Bold = true
+              Color = Navy
+            }
+            Alignment = Left
+            SpaceBefore = "1cm"
+          }
+          HeadingFormat = true
+          Shading
+          {
+            Color = RGB(235,240,249)
+          }
+        ]
+        {
+          \cell
+          [
+            Format
+            {
+              Font
+              {
+                Bold = false
+              }
+            }
+          ]
+          {
+            IDENTIFIER NUMBER
+          }
+          \cell
+          [
+            Format
+            {
+              Alignment = Right
+            }
+          ]
+          {
+            IDENTIFIER TYPE
+          }
+        }
+        \row
+        [
+          Format
+          {
+            Font
+            {
+              Bold = true
+            }
+            Alignment = Left
+          }
+          HeadingFormat = true
+          Shading
+          {
+            Color = RGB(235,240,249)
+          }
+        ]
+        {
+          \cell
+          [
+            Format
+            {
+              Font
+              {
+                Bold = false
+              }
+            }
+          ]
+          {
+            1234567891234567
+          }
+          \cell
+          [
+            Format
+            {
+              Alignment = Right
+            }
+          ]
+          {
+            VIN
+          }
+        }
+        \row
+        [
+          Format
+          {
+            Font
+            {
+              Size = 13
+              Bold = true
+              Color = Navy
+            }
+            Alignment = Left
+            SpaceBefore = "0.8cm"
+          }
+          HeadingFormat = true
+          Shading
+          {
+            Color = RGB(235,240,249)
+          }
+        ]
+        {
+          \cell
+          [
+            Format
+            {
+              Font
+              {
+                Bold = false
+              }
+            }
+          ]
+          {
+            VEHICLE TYPE
+          }
+          \cell
+          [
+            Format
+            {
+              Alignment = Right
+            }
+          ]
+          {
+            MAKE
+          }
+        }
+        \row
+        [
+          Format
+          {
+            Font
+            {
+              Bold = true
+            }
+            Alignment = Left
+          }
+          HeadingFormat = true
+          Shading
+          {
+            Color = RGB(235,240,249)
+          }
+        ]
+        {
+          \cell
+          [
+            Format
+            {
+              Font
+              {
+                Bold = false
+              }
+            }
+          ]
+          {
+            big truck with trailer
+          }
+          \cell
+          [
+            Format
+            {
+              Alignment = Right
+            }
+          ]
+          {
+            Hino
+          }
+        }
+        \row
+        [
+          Format
+          {
+            Font
+            {
+              Size = 13
+              Bold = true
+              Color = Navy
+            }
+            Alignment = Left
+            SpaceBefore = "0.8cm"
+          }
+          HeadingFormat = true
+          Shading
+          {
+            Color = RGB(235,240,249)
+          }
+        ]
+        {
+          \cell
+          [
+            Format
+            {
+              Font
+              {
+                Bold = false
+              }
+            }
+          ]
+          {
+            BODY TYPE
+          }
+          \cell
+          [
+            Format
+            {
+              Alignment = Right
+            }
+          ]
+          {
+            MODEL
+          }
+        }
+        \row
+        [
+          Format
+          {
+            Font
+            {
+              Bold = true
+            }
+            Alignment = Left
+          }
+          HeadingFormat = true
+          Shading
+          {
+            Color = RGB(235,240,249)
+          }
+        ]
+        {
+          \cell
+          [
+            Format
+            {
+              Font
+              {
+                Bold = false
+              }
+            }
+          ]
+          {
+            double axle dog type  trailer
+          }
+          \cell
+          [
+            Format
+            {
+              Alignment = Right
+            }
+          ]
+          {
+            5681FG
+          }
+        }
+        \row
+        [
+          Format
+          {
+            Font
+            {
+              Size = 13
+              Bold = true
+              Color = Navy
+            }
+            Alignment = Left
+            SpaceBefore = "0.8cm"
+          }
+          HeadingFormat = true
+          Shading
+          {
+            Color = RGB(235,240,249)
+          }
+        ]
+        {
+          \cell
+          [
+            Format
+            {
+              Font
+              {
+                Bold = false
+              }
+            }
+          ]
+          {
+            COLOUR
+          }
+          \cell
+          [
+            Format
+            {
+              Alignment = Right
+            }
+          ]
+          {
+            ENGINE NUMBER
+          }
+        }
+        \row
+        [
+          Format
+          {
+            Font
+            {
+              Bold = true
+            }
+            Alignment = Left
+          }
+          HeadingFormat = true
+          Shading
+          {
+            Color = RGB(235,240,249)
+          }
+        ]
+        {
+          \cell
+          [
+            Format
+            {
+              Font
+              {
+                Bold = false
+              }
+            }
+          ]
+          {
+            Pearl white
+          }
+          \cell
+          [
+            Format
+            {
+              Alignment = Right
+            }
+          ]
+          {
+            123121212
+          }
+        }
+        \row
+        [
+          Format
+          {
+            Font
+            {
+              Size = 13
+              Bold = true
+              Color = Navy
+            }
+            Alignment = Left
+            SpaceBefore = "0.8cm"
+          }
+          HeadingFormat = true
+          Shading
+          {
+            Color = RGB(235,240,249)
+          }
+        ]
+        {
+          \cell
+          [
+            Format
+            {
+              Font
+              {
+                Bold = false
+              }
+            }
+          ]
+          {
+            REGISTRATION NUMBER
+          }
+          \cell
+          [
+            Format
+            {
+              Alignment = Right
+            }
+          ]
+          {
+            REGISTERATION STATE
+          }
+        }
+        \row
+        [
+          Format
+          {
+            Font
+            {
+              Bold = true
+            }
+            Alignment = Left
+          }
+          HeadingFormat = true
+          Shading
+          {
+            Color = RGB(235,240,249)
+          }
+        ]
+        {
+          \cell
+          [
+            Format
+            {
+              Font
+              {
+                Bold = false
+              }
+            }
+          ]
+          {
+            EBR52M
+          }
+          \cell
+          [
+            Format
+            {
+              Alignment = Right
+            }
+          ]
+          {
+            NSW
+          }
+        }
+        \row
+        [
+          Format
+          {
+            Font
+            {
+              Size = 13
+              Bold = true
+              Color = Navy
+            }
+            Alignment = Left
+            SpaceBefore = "0.8cm"
+          }
+          HeadingFormat = true
+          Shading
+          {
+            Color = RGB(235,240,249)
+          }
+        ]
+        {
+          \cell
+          [
+            Format
+            {
+              Font
+              {
+                Bold = false
+              }
+            }
+          ]
+          {
+            REGISTRATION EXPIRY
+          }
+        }
+        \row
+        [
+          Format
+          {
+            Font
+            {
+              Bold = true
+            }
+            Alignment = Left
+          }
+          HeadingFormat = true
+          Shading
+          {
+            Color = RGB(235,240,249)
+          }
+        ]
+        {
+          \cell
+          [
+            Format
+            {
+              Font
+              {
+                Bold = false
+              }
+            }
+          ]
+          {
+            12/06/2020
+          }
+        }
+        \row
+        [
+          Format
+          {
+            Font
+            {
+              Size = 13
+              Bold = true
+              Color = Navy
+            }
+            Alignment = Left
+            SpaceBefore = "0.8cm"
+          }
+          HeadingFormat = true
+          Shading
+          {
+            Color = RGB(235,240,249)
+          }
+        ]
+        {
+          \cell
+          [
+            Format
+            {
+              Font
+              {
+                Bold = false
+              }
+            }
+          ]
+          {
+            YEAR OF  MANUFACTURER
+          }
+          \cell
+          [
+            Format
+            {
+              Alignment = Right
+            }
+          ]
+          {
+            YEAR/MONTH OF COMPLIANCE
+          }
+        }
+        \row
+        [
+          Format
+          {
+            Font
+            {
+              Bold = true
+            }
+            Alignment = Left
+          }
+          HeadingFormat = true
+          Shading
+          {
+            Color = RGB(235,240,249)
+          }
+        ]
+        {
+          \cell
+          [
+            Format
+            {
+              Font
+              {
+                Bold = false
+              }
+            }
+          ]
+          {
+            2001
+          }
+          \cell
+          [
+            Format
+            {
+              Alignment = Right
+            }
+          ]
+          {
+            March 2021
+          }
+        }
+      }
+    }
+    \paragraph
+    [
+      Format
+      {
+        Font
+        {
+          Size = 9
+        }
+        Alignment = Center
+      }
+    ]
+    {
+    }
+    \table
+    [
+      Style = "Table"
+      Format
+      {
+        SpaceBefore = "3cm"
+      }
+      Borders
+      {
+        Width = 0.25
+        Color = Transparent
+        Left
+        {
+          Width = 0.5
+        }
+        Right
+        {
+          Width = 0.5
+        }
+      }
+    ]
+    {
+      \columns
+      {
+        \column
+        [
+          Format
+          {
+            Alignment = Center
+          }
+          Width = "16cm"
+        ]
+      }
+      \rows
+      [
+        LeftIndent = 0
+      ]
+      {
+        \row
+        [
+          Format
+          {
+            Font
+            {
+              Size = 13
+              Bold = true
+              Color = Navy
+            }
+            Alignment = Left
+            SpaceBefore = "1cm"
+          }
+          HeadingFormat = true
+        ]
+        {
+          \cell
+          [
+            Shading
+            {
+              Color = RGB(235,240,249)
+            }
+          ]
+          {
+            \paragraph
+            [
+              Format
+              {
+                Alignment = Center
+                LeftIndent = 0
+                FirstLineIndent = "0.5cm"
+                SpaceBefore = 0
+                SpaceAfter = 0
+                LineSpacingRule = Double
+              }
+            ]
+            {
+              PPSR Registeration Details
+            }
+          }
+        }
+        \row
+        [
+          Format
+          {
+            Font
+            {
+              Bold = true
+            }
+            Alignment = Center
+            SpaceBefore = "3cm"
+          }
+          HeadingFormat = true
+        ]
+        {
+          \cell
+          {
+            \paragraph
+            [
+              Format
+              {
+                LeftIndent = 0
+                SpaceBefore = 0
+              }
+            ]
+            {
+              \image("greentick.png")
+              [
+                Height = "1cm"
+                Width = "1cm"
+              ]
+            }
+            \paragraph
+            [
+              Format
+              {
+                LeftIndent = 0
+                SpaceBefore = 0
+                SpaceAfter = "1cm"
+              }
+            ]
+            {
+              There is no security interest or other registration kind registered on the PPSR against the serial number in thesearch criteria details
+            }
+          }
+        }
+        \row
+        [
+          Format
+          {
+            Font
+            {
+              Size = 13
+              Bold = true
+              Color = Navy
+            }
+            Alignment = Left
+            SpaceBefore = "1cm"
+          }
+          HeadingFormat = true
+        ]
+        {
+          \cell
+          [
+            Shading
+            {
+              Color = RGB(235,240,249)
+            }
+          ]
+          {
+            \paragraph
+            [
+              Format
+              {
+                Alignment = Center
+                LeftIndent = 0
+                FirstLineIndent = "0.5cm"
+                SpaceBefore = 0
+                SpaceAfter = 0
+                LineSpacingRule = Double
+              }
+            ]
+            {
+              NEVDIS WRITTEN OFF VEHICLE NOTIFICATION
+            }
+          }
+        }
+        \row
+        [
+          Format
+          {
+            Font
+            {
+              Bold = true
+            }
+            Alignment = Center
+            SpaceBefore = "3cm"
+          }
+          HeadingFormat = true
+        ]
+        {
+          \cell
+          {
+            \paragraph
+            [
+              Format
+              {
+                LeftIndent = 0
+                SpaceBefore = 0
+                SpaceAfter = 0
+              }
+            ]
+            {
+              \image("greentick.png")
+              [
+                Height = "1cm"
+                Width = "1cm"
+              ]
+            }
+            \paragraph
+            [
+              Format
+              {
+                LeftIndent = 0
+                SpaceBefore = 0
+                SpaceAfter = "1cm"
+              }
+            ]
+            {
+              Not recorded as written off
+            }
+          }
+        }
+        \row
+        [
+          Format
+          {
+            Font
+            {
+              Size = 13
+              Bold = true
+              Color = Navy
+            }
+            Alignment = Left
+            SpaceBefore = "1cm"
+          }
+          HeadingFormat = true
+        ]
+        {
+          \cell
+          [
+            Shading
+            {
+              Color = RGB(235,240,249)
+            }
+          ]
+          {
+            \paragraph
+            [
+              Format
+              {
+                Alignment = Center
+                LeftIndent = 0
+                FirstLineIndent = "0.5cm"
+                SpaceBefore = 0
+                SpaceAfter = 0
+                LineSpacingRule = Double
+              }
+            ]
+            {
+              NEVDIS STOLEN VEHICLE NOTIFICATION
+            }
+          }
+        }
+        \row
+        [
+          Format
+          {
+            Font
+            {
+              Bold = true
+            }
+            Alignment = Center
+          }
+          HeadingFormat = true
+        ]
+        {
+          \cell
+          {
+            \paragraph
+            [
+              Format
+              {
+                LeftIndent = 0
+                SpaceBefore = 3
+                SpaceAfter = 0
+              }
+            ]
+            {
+              \image("redcross.png")
+              [
+                Height = "1cm"
+                Width = "1cm"
+              ]
+            }
+            \paragraph
+            [
+              Format
+              {
+                LeftIndent = 0
+                SpaceBefore = 0
+                SpaceAfter = 0
+              }
+            ]
+            {
+              Its recorded as stolen.  Tasmanian stolen vehicle information is currently unavailable from this service. For information about the statusof Tasmanian vehicles, go
+               to:https:\//www.transport.tas.gov.au/MRSWebInterface/public/regoLookup/registrationLookup.jsf(Note: you willneed to provide the vehicle registration plate number to search this site).A
+               stolen vehicle notification, or the absence of one, does not necessarily mean a vehicle is or is not stolen.
+            }
+          }
+        }
+      }
+    }
+  }
+}
